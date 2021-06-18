@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome to the Library {% endblock %}
+
+{% block content %}
+<!-- JUMBOTRON -->
+<section class="my-jumbotron">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Can't remember every single piece of knowledge contained in this universe ? Why not write it down ?!!</h1>
+      <a href="{{ url_for('.create') }}" class="btn btn-primary my-button">Create Note</a>
+    </div>
+  </div>
+</section>
+<!-- END JUMBOTRON -->
+
+<!-- PANEL -->
+<section class="my-panel">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-10 my-info-panel">
+        <h5>A word from our users..</h5>
+        <div class="row">
+          <div class="col-lg">
+            <img src="{{ url_for('static', filename='img/SANIC.jpeg') }}"width="200"
+     height="160" alt="fast" class="float-left">
+            <h4>Fast</h4>
+            <p>The worst thing about being faster than light is that you always lives in the darkness</p><p> but this note app became the shine on my dark stricken world</p>
+          </div>
+          <div class="col-lg">
+            <img src="{{ url_for('static', filename='img/goku_drip.....GOKU_DRIP.jpeg') }}"width="200"
+     height="160" alt="cool" class="float-left">
+            <h4>Cool</h4><p>this app is pretty</p>
+            <p>C O O L</p>
+          </div>
+          <div class="col-lg">
+            <img src="{{ url_for('static', filename='img/LAUGH.jpeg') }}"width="200"
+     height="160" alt="simple" class="float-left">
+            <h4>Wisdom</h4>
+            <p>Many knew me as the guy who never passes the test, but with this note app...</p><center> I shall pass</center>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="row my-info-panel2">
+
+      <div class="col-lg-6">
+        <img src="{{ url_for('static', filename='img/comfort.jpeg') }}" alt="comfort" class="img-fluid">
+      </div>
+
+      <div class="col-lg-5">
+        <h3>Ascend as a higher being <span>with this note app</span></h3>
+        <p>Achieve the Brain's Full Potential</p>
+        <a href="#" class="btn btn-primary my-button">Find Out</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END PANEL -->
+{% endblock %}
